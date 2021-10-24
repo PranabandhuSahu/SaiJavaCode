@@ -10,7 +10,7 @@ pipeline {
         stage('Code Checkout') {
             steps {
                 echo "code checkout"
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/PranabandhuSahu/maven-project.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/PranabandhuSahu/SaiJavaCode.git']]])
             }
         }
 
